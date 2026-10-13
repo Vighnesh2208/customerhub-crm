@@ -9,6 +9,7 @@ import { FollowUpsView } from './views/FollowUpsView';
 import { CustomerDetailModal } from './components/customers/CustomerDetailModal';
 import { OrderDetailModal } from './components/orders/OrderDetailModal';
 import { NewTaskModal } from './components/followups/NewTaskModal';
+import { CrmCopilot } from './components/copilot/CrmCopilot';
 
 function MainContent() {
   const { activeView } = useCrm();
@@ -60,6 +61,9 @@ function MainContent() {
       <CustomerDetailModal />
       <OrderDetailModal />
       <NewTaskModal />
+
+      {/* Floating CRM Copilot Chatbot */}
+      <CrmCopilot />
     </div>
   );
 }
